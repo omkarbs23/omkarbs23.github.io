@@ -708,6 +708,27 @@ margin: 0 0 10px 10px;
 /*--------------------------------------------------------------
 # Resume Section
 --------------------------------------------------------------*/
+/* Resume printed-page style */
+.resume-page {
+  max-width: 1500px;
+  margin: 30px auto;
+  padding: 36px;
+  border: 5px solid #ccc;
+  /* 5px border as requested */
+  background: #F9FBFC;
+  /* white "paper" */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border-radius: 6px;
+}
+
+/* Keep layout comfortable on small screens */
+@media (max-width: 991px) {
+  .resume-page {
+    margin: 16px;
+    padding: 20px;
+  }
+}
+
 .resume .resume-title {
   color: var(--heading-color);
   font-size: 26px;
